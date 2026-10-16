@@ -1,0 +1,7 @@
+id,name,role,lat,lon,osm_ref,ref_point
+D,San Pier Marina,deposito,38.2031170,15.3253471,node/2698850276,Nodo della frazione San Pier Marina (San Pier Niceto)
+C1,Milazzo,cliente,38.2204827,15.2421668,node/2363131885,"Municipio di Milazzo, Atrio del Carmine"
+C2,Monforte Marina,cliente,38.2066237,15.3379597,node/2273443920,Nodo della frazione Monforte Marina (Monforte San Giorgio)
+C3,Torregrotta,cliente,38.1917335,15.3525949,node/2470169235,"Municipio di Torregrotta, Via Mezzasalma"
+C4,Venetico Marina,cliente,38.2193263,15.3686303,node/2471012203,"Ufficio postale di Venetico Marina, Via Paolo Sindoni"
+C5,Spadafora,cliente,38.2222359,15.3748423,node/2470582569,"Municipio di Spadafora, Piazza Vittorio Emanuele III"

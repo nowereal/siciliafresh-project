@@ -1,0 +1,818 @@
+{
+ "service": "OSRM - Open Source Routing Machine, server dimostrativo pubblico",
+ "data": "OpenStreetMap contributors (licenza ODbL)",
+ "profile": "driving (auto), percorso piu rapido secondo il modello OSRM",
+ "retrieved_at": "2026-10-15T00:04:21",
+ "request_url": "https://router.project-osrm.org/table/v1/driving/15.3253471,38.2031170;15.2421668,38.2204827;15.3379597,38.2066237;15.3525949,38.1917335;15.3686303,38.2193263;15.3748423,38.2222359?annotations=distance,duration",
+ "ids": [
+  "D",
+  "C1",
+  "C2",
+  "C3",
+  "C4",
+  "C5"
+ ],
+ "response": {
+  "code": "Ok",
+  "distances": [
+   [
+    0,
+    9508.2,
+    1427.3,
+    4493.7,
+    4492.2,
+    5228.3
+   ],
+   [
+    9946,
+    0,
+    10985.2,
+    14051.6,
+    14050.1,
+    14786.1
+   ],
+   [
+    1750.1,
+    10851.4,
+    0,
+    3021.5,
+    3487.7,
+    4223.7
+   ],
+   [
+    4863,
+    13964.3,
+    3350.6,
+    0,
+    4458.9,
+    5194.9
+   ],
+   [
+    4751.4,
+    13852.6,
+    3239,
+    4466.7,
+    0,
+    800.6
+   ],
+   [
+    5562.3,
+    14663.6,
+    4049.9,
+    5277.6,
+    875.5,
+    0
+   ]
+  ],
+  "destinations": [
+   {
+    "hint": "V3-rh____38AAAAAKwAAAAAAAAAFAAAALUHnPu0k4EEAAAAAvxtoQAAAAAArAAAAAAAAAAUAAACIKAEAlNjpACHvRgKj2OkA7e5GAgAAHxAAAAAA",
+    "location": [
+     15.325332,
+     38.203169
+    ],
+    "name": "Via Europa",
+    "distance": 5.919593057
+   },
+   {
+    "hint": "4_yrhv___38BAAAABgAAAAAAAABaAAAA2JH2P2GgnEAAAAAAwWXIQgEAAAAGAAAAAAAAAFoAAACIKAEAbJToAFgyRwK3k-gAwzJHAgAAXwIAAAAA",
+    "location": [
+     15.242348,
+     38.220376
+    ],
+    "name": "Via Francesco Crispi",
+    "distance": 19.80543305
+   },
+   {
+    "hint": "bgnLhm8Jy4Y9AAAABwAAAAAAAAAAAAAAYvUqQo6zkUAAAAAAAAAAAD0AAAAHAAAAAAAAAAAAAACIKAEAEArqAP_7RgLoCeoAoPxGAgAA7wQAAAAA",
+    "location": [
+     15.338,
+     38.206463
+    ],
+    "name": "Via Luigi Pirandello",
+    "distance": 18.21111356
+   },
+   {
+    "hint": "apnsgP___38IAAAADAAAAAAAAAAOAAAAJJfBQGHoF0AAAAAADmYUQQgAAAAMAAAAAAAAAA4AAACIKAEANEPqACDCRgITQ-oAdsJGAgAAnwQAAAAA",
+    "location": [
+     15.352628,
+     38.191648
+    ],
+    "name": "Via Mezzasalma",
+    "distance": 9.974314449
+   },
+   {
+    "hint": "jzNxg7czcYMuAAAAQwAAAAAAAAAAAAAA4CgBQomFOEIAAAAAAAAAAC4AAABDAAAAAAAAAAAAAACIKAEAU4HqABIuRwK2geoAPi5HAgAArxQAAAAA",
+    "location": [
+     15.368531,
+     38.219282
+    ],
+    "name": "Via Paolo Sindoni",
+    "distance": 9.949950067
+   },
+   {
+    "hint": "nAaXg____38JAAAAIQAAAFMAAAAAAAAAmfbIQL_tgkH6yGZCAAAAAAkAAAAhAAAAUwAAAAAAAACIKAEAD5rqACo5RwL6meoAnDlHAggAHwUAAAAA",
+    "location": [
+     15.374863,
+     38.222122
+    ],
+    "name": "",
+    "distance": 12.78699144
+   }
+  ],
+  "durations": [
+   [
+    0,
+    879.8,
+    145.4,
+    427,
+    323.3,
+    394.5
+   ],
+   [
+    936.5,
+    0,
+    1010.8,
+    1292.4,
+    1188.7,
+    1259.9
+   ],
+   [
+    216.7,
+    1016.8,
+    0,
+    334.4,
+    251.7,
+    322.9
+   ],
+   [
+    497.7,
+    1297.8,
+    345,
+    0,
+    364.5,
+    435.7
+   ],
+   [
+    370.5,
+    1170.6,
+    217.8,
+    362.5,
+    0,
+    91.2
+   ],
+   [
+    425.5,
+    1225.6,
+    272.8,
+    417.5,
+    68.4,
+    0
+   ]
+  ],
+  "sources": [
+   {
+    "hint": "V3-rh____38AAAAAKwAAAAAAAAAFAAAALUHnPu0k4EEAAAAAvxtoQAAAAAArAAAAAAAAAAUAAACIKAEAlNjpACHvRgKj2OkA7e5GAgAAHxAAAAAA",
+    "location": [
+     15.325332,
+     38.203169
+    ],
+    "name": "Via Europa",
+    "distance": 5.919593057
+   },
+   {
+    "hint": "4_yrhv___38BAAAABgAAAAAAAABaAAAA2JH2P2GgnEAAAAAAwWXIQgEAAAAGAAAAAAAAAFoAAACIKAEAbJToAFgyRwK3k-gAwzJHAgAAXwIAAAAA",
+    "location": [
+     15.242348,
+     38.220376
+    ],
+    "name": "Via Francesco Crispi",
+    "distance": 19.80543305
+   },
+   {
+    "hint": "bgnLhm8Jy4Y9AAAABwAAAAAAAAAAAAAAYvUqQo6zkUAAAAAAAAAAAD0AAAAHAAAAAAAAAAAAAACIKAEAEArqAP_7RgLoCeoAoPxGAgAA7wQAAAAA",
+    "location": [
+     15.338,
+     38.206463
+    ],
+    "name": "Via Luigi Pirandello",
+    "distance": 18.21111356
+   },
+   {
+    "hint": "apnsgP___38IAAAADAAAAAAAAAAOAAAAJJfBQGHoF0AAAAAADmYUQQgAAAAMAAAAAAAAAA4AAACIKAEANEPqACDCRgITQ-oAdsJGAgAAnwQAAAAA",
+    "location": [
+     15.352628,
+     38.191648
+    ],
+    "name": "Via Mezzasalma",
+    "distance": 9.974314449
+   },
+   {
+    "hint": "jzNxg7czcYMuAAAAQwAAAAAAAAAAAAAA4CgBQomFOEIAAAAAAAAAAC4AAABDAAAAAAAAAAAAAACIKAEAU4HqABIuRwK2geoAPi5HAgAArxQAAAAA",
+    "location": [
+     15.368531,
+     38.219282
+    ],
+    "name": "Via Paolo Sindoni",
+    "distance": 9.949950067
+   },
+   {
+    "hint": "nAaXg____38JAAAAIQAAAFMAAAAAAAAAmfbIQL_tgkH6yGZCAAAAAAkAAAAhAAAAUwAAAAAAAACIKAEAD5rqACo5RwL6meoAnDlHAggAHwUAAAAA",
+    "location": [
+     15.374863,
+     38.222122
+    ],
+    "name": "",
+    "distance": 12.78699144
+   }
+  ]
+ },
+ "routes": {
+  "D->C1": {
+   "distance_km": 9.51,
+   "roads_km": [
+    [
+     "SS113",
+     4.1
+    ],
+    [
+     "SP67/dir",
+     2.56
+    ],
+    [
+     "SP67",
+     0.99
+    ],
+    [
+     "Via Tonnara di Milazzo",
+     0.56
+    ],
+    [
+     "Via Nino Bixio",
+     0.44
+    ],
+    [
+     "Via Tindaro La Rosa",
+     0.39
+    ],
+    [
+     "Via Ammiraglio Luigi Rizzo",
+     0.31
+    ]
+   ]
+  },
+  "D->C2": {
+   "distance_km": 1.43,
+   "roads_km": [
+    [
+     "SS113",
+     1.27
+    ]
+   ]
+  },
+  "D->C3": {
+   "distance_km": 4.49,
+   "roads_km": [
+    [
+     "SS113",
+     1.8
+    ],
+    [
+     "SP60",
+     1.28
+    ],
+    [
+     "SP59/a",
+     1.26
+    ]
+   ]
+  },
+  "D->C4": {
+   "distance_km": 4.49,
+   "roads_km": [
+    [
+     "SS113",
+     4.39
+    ]
+   ]
+  },
+  "D->C5": {
+   "distance_km": 5.23,
+   "roads_km": [
+    [
+     "SS113",
+     4.7
+    ],
+    [
+     "Via Carmine",
+     0.22
+    ]
+   ]
+  },
+  "C1->D": {
+   "distance_km": 9.95,
+   "roads_km": [
+    [
+     "SS113",
+     4.12
+    ],
+    [
+     "SP67/dir",
+     2.62
+    ],
+    [
+     "SP67",
+     1.9
+    ],
+    [
+     "Via dei Mille",
+     0.4
+    ],
+    [
+     "Piazza Caio Duilio",
+     0.35
+    ]
+   ]
+  },
+  "C1->C2": {
+   "distance_km": 10.99,
+   "roads_km": [
+    [
+     "SS113",
+     5.39
+    ],
+    [
+     "SP67/dir",
+     2.62
+    ],
+    [
+     "SP67",
+     1.9
+    ],
+    [
+     "Via dei Mille",
+     0.4
+    ],
+    [
+     "Piazza Caio Duilio",
+     0.35
+    ]
+   ]
+  },
+  "C1->C3": {
+   "distance_km": 14.05,
+   "roads_km": [
+    [
+     "SS113",
+     5.93
+    ],
+    [
+     "SP67/dir",
+     2.62
+    ],
+    [
+     "SP67",
+     1.9
+    ],
+    [
+     "SP60",
+     1.28
+    ],
+    [
+     "SP59/a",
+     1.26
+    ],
+    [
+     "Via dei Mille",
+     0.4
+    ],
+    [
+     "Piazza Caio Duilio",
+     0.35
+    ]
+   ]
+  },
+  "C1->C4": {
+   "distance_km": 14.05,
+   "roads_km": [
+    [
+     "SS113",
+     8.51
+    ],
+    [
+     "SP67/dir",
+     2.62
+    ],
+    [
+     "SP67",
+     1.9
+    ],
+    [
+     "Via dei Mille",
+     0.4
+    ],
+    [
+     "Piazza Caio Duilio",
+     0.35
+    ]
+   ]
+  },
+  "C1->C5": {
+   "distance_km": 14.79,
+   "roads_km": [
+    [
+     "SS113",
+     8.83
+    ],
+    [
+     "SP67/dir",
+     2.62
+    ],
+    [
+     "SP67",
+     1.9
+    ],
+    [
+     "Via dei Mille",
+     0.4
+    ],
+    [
+     "Piazza Caio Duilio",
+     0.35
+    ],
+    [
+     "Via Carmine",
+     0.22
+    ]
+   ]
+  },
+  "C2->D": {
+   "distance_km": 1.75,
+   "roads_km": [
+    [
+     "SS113",
+     1.17
+    ]
+   ]
+  },
+  "C2->C1": {
+   "distance_km": 10.85,
+   "roads_km": [
+    [
+     "SS113",
+     5.28
+    ],
+    [
+     "SP67/dir",
+     2.56
+    ],
+    [
+     "SP67",
+     0.99
+    ],
+    [
+     "Via Tonnara di Milazzo",
+     0.56
+    ],
+    [
+     "Via Nino Bixio",
+     0.44
+    ],
+    [
+     "Via Tindaro La Rosa",
+     0.39
+    ],
+    [
+     "Via Ammiraglio Luigi Rizzo",
+     0.31
+    ]
+   ]
+  },
+  "C2->C3": {
+   "distance_km": 3.02,
+   "roads_km": [
+    [
+     "Via Regione Siciliana",
+     1.58
+    ],
+    [
+     "SP60",
+     0.52
+    ],
+    [
+     "Via Salvo D'Aquisto",
+     0.3
+    ],
+    [
+     "(senza nome)",
+     0.25
+    ]
+   ]
+  },
+  "C2->C4": {
+   "distance_km": 3.49,
+   "roads_km": [
+    [
+     "SS113",
+     3.21
+    ]
+   ]
+  },
+  "C2->C5": {
+   "distance_km": 4.22,
+   "roads_km": [
+    [
+     "SS113",
+     3.53
+    ],
+    [
+     "Via Carmine",
+     0.22
+    ]
+   ]
+  },
+  "C3->D": {
+   "distance_km": 4.86,
+   "roads_km": [
+    [
+     "SS113",
+     1.8
+    ],
+    [
+     "SP60/ter",
+     1.08
+    ],
+    [
+     "SP59",
+     0.89
+    ],
+    [
+     "SP59/a",
+     0.6
+    ]
+   ]
+  },
+  "C3->C1": {
+   "distance_km": 13.96,
+   "roads_km": [
+    [
+     "SS113",
+     5.91
+    ],
+    [
+     "SP67/dir",
+     2.56
+    ],
+    [
+     "SP60/ter",
+     1.08
+    ],
+    [
+     "SP67",
+     0.99
+    ],
+    [
+     "SP59",
+     0.89
+    ],
+    [
+     "SP59/a",
+     0.6
+    ],
+    [
+     "Via Tonnara di Milazzo",
+     0.56
+    ],
+    [
+     "Via Nino Bixio",
+     0.44
+    ],
+    [
+     "Via Tindaro La Rosa",
+     0.39
+    ],
+    [
+     "Via Ammiraglio Luigi Rizzo",
+     0.31
+    ]
+   ]
+  },
+  "C3->C2": {
+   "distance_km": 3.35,
+   "roads_km": [
+    [
+     "SP60/ter",
+     1.08
+    ],
+    [
+     "SP59",
+     0.89
+    ],
+    [
+     "SP59/a",
+     0.6
+    ],
+    [
+     "SS113",
+     0.54
+    ]
+   ]
+  },
+  "C3->C4": {
+   "distance_km": 4.46,
+   "roads_km": [
+    [
+     "SP60/ter",
+     1.67
+    ],
+    [
+     "SS113",
+     1.28
+    ],
+    [
+     "Circonvallazione Sud",
+     0.9
+    ],
+    [
+     "SP58",
+     0.42
+    ]
+   ]
+  },
+  "C3->C5": {
+   "distance_km": 5.19,
+   "roads_km": [
+    [
+     "SP60/ter",
+     1.67
+    ],
+    [
+     "SS113",
+     1.6
+    ],
+    [
+     "Circonvallazione Sud",
+     0.9
+    ],
+    [
+     "SP58",
+     0.42
+    ],
+    [
+     "Via Carmine",
+     0.22
+    ]
+   ]
+  },
+  "C4->D": {
+   "distance_km": 4.75,
+   "roads_km": [
+    [
+     "SS113",
+     4.39
+    ]
+   ]
+  },
+  "C4->C1": {
+   "distance_km": 13.85,
+   "roads_km": [
+    [
+     "SS113",
+     8.49
+    ],
+    [
+     "SP67/dir",
+     2.56
+    ],
+    [
+     "SP67",
+     0.99
+    ],
+    [
+     "Via Tonnara di Milazzo",
+     0.56
+    ],
+    [
+     "Via Nino Bixio",
+     0.44
+    ],
+    [
+     "Via Tindaro La Rosa",
+     0.39
+    ],
+    [
+     "Via Ammiraglio Luigi Rizzo",
+     0.31
+    ]
+   ]
+  },
+  "C4->C2": {
+   "distance_km": 3.24,
+   "roads_km": [
+    [
+     "SS113",
+     3.12
+    ]
+   ]
+  },
+  "C4->C3": {
+   "distance_km": 4.47,
+   "roads_km": [
+    [
+     "SP60",
+     2.36
+    ],
+    [
+     "SS113",
+     2.0
+    ]
+   ]
+  },
+  "C4->C5": {
+   "distance_km": 0.8,
+   "roads_km": [
+    [
+     "SS113",
+     0.32
+    ],
+    [
+     "Via Carmine",
+     0.22
+    ]
+   ]
+  },
+  "C5->D": {
+   "distance_km": 5.56,
+   "roads_km": [
+    [
+     "SS113",
+     5.13
+    ]
+   ]
+  },
+  "C5->C1": {
+   "distance_km": 14.66,
+   "roads_km": [
+    [
+     "SS113",
+     9.23
+    ],
+    [
+     "SP67/dir",
+     2.56
+    ],
+    [
+     "SP67",
+     0.99
+    ],
+    [
+     "Via Tonnara di Milazzo",
+     0.56
+    ],
+    [
+     "Via Nino Bixio",
+     0.44
+    ],
+    [
+     "Via Tindaro La Rosa",
+     0.39
+    ],
+    [
+     "Via Ammiraglio Luigi Rizzo",
+     0.31
+    ]
+   ]
+  },
+  "C5->C2": {
+   "distance_km": 4.05,
+   "roads_km": [
+    [
+     "SS113",
+     3.86
+    ]
+   ]
+  },
+  "C5->C3": {
+   "distance_km": 5.28,
+   "roads_km": [
+    [
+     "SS113",
+     2.75
+    ],
+    [
+     "SP60",
+     2.36
+    ]
+   ]
+  },
+  "C5->C4": {
+   "distance_km": 0.88,
+   "roads_km": [
+    [
+     "SS113",
+     0.74
+    ]
+   ]
+  }
+ }
+}

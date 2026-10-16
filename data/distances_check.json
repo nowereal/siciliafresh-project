@@ -1,0 +1,257 @@
+{
+ "service": "Valhalla, server pubblico FOSSGIS (valhalla1.openstreetmap.de)",
+ "data": "OpenStreetMap contributors (licenza ODbL)",
+ "costing": "auto",
+ "retrieved_at": "2026-10-16T15:21:16",
+ "note": "Controllo di coerenza: la fonte principale della matrice resta OSRM (distances_source.json).",
+ "summary": {
+  "pairs": 30,
+  "missing": 0,
+  "mean_abs_diff_km": 0.06,
+  "max_abs_diff_km": 0.4,
+  "max_abs_diff_pct": 10.3,
+  "within_5_pct": 27
+ },
+ "pairs": [
+  {
+   "from": "D",
+   "to": "C1",
+   "osrm_km": 9.51,
+   "valhalla_km": 9.51,
+   "diff_km": -0.0,
+   "diff_pct": -0.1
+  },
+  {
+   "from": "D",
+   "to": "C2",
+   "osrm_km": 1.43,
+   "valhalla_km": 1.43,
+   "diff_km": -0.0,
+   "diff_pct": -0.1
+  },
+  {
+   "from": "D",
+   "to": "C3",
+   "osrm_km": 4.49,
+   "valhalla_km": 4.89,
+   "diff_km": 0.4,
+   "diff_pct": 9.0
+  },
+  {
+   "from": "D",
+   "to": "C4",
+   "osrm_km": 4.49,
+   "valhalla_km": 4.49,
+   "diff_km": 0.0,
+   "diff_pct": 0.0
+  },
+  {
+   "from": "D",
+   "to": "C5",
+   "osrm_km": 5.23,
+   "valhalla_km": 5.23,
+   "diff_km": -0.0,
+   "diff_pct": -0.1
+  },
+  {
+   "from": "C1",
+   "to": "D",
+   "osrm_km": 9.95,
+   "valhalla_km": 9.94,
+   "diff_km": -0.01,
+   "diff_pct": -0.1
+  },
+  {
+   "from": "C1",
+   "to": "C2",
+   "osrm_km": 10.99,
+   "valhalla_km": 10.98,
+   "diff_km": -0.01,
+   "diff_pct": -0.1
+  },
+  {
+   "from": "C1",
+   "to": "C3",
+   "osrm_km": 14.05,
+   "valhalla_km": 13.76,
+   "diff_km": -0.29,
+   "diff_pct": -2.1
+  },
+  {
+   "from": "C1",
+   "to": "C4",
+   "osrm_km": 14.05,
+   "valhalla_km": 14.05,
+   "diff_km": -0.0,
+   "diff_pct": -0.0
+  },
+  {
+   "from": "C1",
+   "to": "C5",
+   "osrm_km": 14.79,
+   "valhalla_km": 14.78,
+   "diff_km": -0.01,
+   "diff_pct": -0.1
+  },
+  {
+   "from": "C2",
+   "to": "D",
+   "osrm_km": 1.75,
+   "valhalla_km": 1.75,
+   "diff_km": -0.0,
+   "diff_pct": -0.1
+  },
+  {
+   "from": "C2",
+   "to": "C1",
+   "osrm_km": 10.85,
+   "valhalla_km": 10.85,
+   "diff_km": -0.0,
+   "diff_pct": -0.0
+  },
+  {
+   "from": "C2",
+   "to": "C3",
+   "osrm_km": 3.02,
+   "valhalla_km": 3.04,
+   "diff_km": 0.02,
+   "diff_pct": 0.7
+  },
+  {
+   "from": "C2",
+   "to": "C4",
+   "osrm_km": 3.49,
+   "valhalla_km": 3.49,
+   "diff_km": -0.0,
+   "diff_pct": -0.1
+  },
+  {
+   "from": "C2",
+   "to": "C5",
+   "osrm_km": 4.22,
+   "valhalla_km": 4.22,
+   "diff_km": 0.0,
+   "diff_pct": 0.0
+  },
+  {
+   "from": "C3",
+   "to": "D",
+   "osrm_km": 4.86,
+   "valhalla_km": 5.21,
+   "diff_km": 0.35,
+   "diff_pct": 7.1
+  },
+  {
+   "from": "C3",
+   "to": "C1",
+   "osrm_km": 13.96,
+   "valhalla_km": 14.31,
+   "diff_km": 0.35,
+   "diff_pct": 2.5
+  },
+  {
+   "from": "C3",
+   "to": "C2",
+   "osrm_km": 3.35,
+   "valhalla_km": 3.69,
+   "diff_km": 0.34,
+   "diff_pct": 10.3
+  },
+  {
+   "from": "C3",
+   "to": "C4",
+   "osrm_km": 4.46,
+   "valhalla_km": 4.46,
+   "diff_km": 0.0,
+   "diff_pct": 0.0
+  },
+  {
+   "from": "C3",
+   "to": "C5",
+   "osrm_km": 5.19,
+   "valhalla_km": 5.2,
+   "diff_km": 0.01,
+   "diff_pct": 0.1
+  },
+  {
+   "from": "C4",
+   "to": "D",
+   "osrm_km": 4.75,
+   "valhalla_km": 4.75,
+   "diff_km": 0.0,
+   "diff_pct": 0.0
+  },
+  {
+   "from": "C4",
+   "to": "C1",
+   "osrm_km": 13.85,
+   "valhalla_km": 13.85,
+   "diff_km": -0.0,
+   "diff_pct": -0.0
+  },
+  {
+   "from": "C4",
+   "to": "C2",
+   "osrm_km": 3.24,
+   "valhalla_km": 3.24,
+   "diff_km": -0.0,
+   "diff_pct": -0.1
+  },
+  {
+   "from": "C4",
+   "to": "C3",
+   "osrm_km": 4.47,
+   "valhalla_km": 4.47,
+   "diff_km": 0.0,
+   "diff_pct": 0.0
+  },
+  {
+   "from": "C4",
+   "to": "C5",
+   "osrm_km": 0.8,
+   "valhalla_km": 0.8,
+   "diff_km": 0.0,
+   "diff_pct": 0.0
+  },
+  {
+   "from": "C5",
+   "to": "D",
+   "osrm_km": 5.56,
+   "valhalla_km": 5.56,
+   "diff_km": 0.0,
+   "diff_pct": 0.0
+  },
+  {
+   "from": "C5",
+   "to": "C1",
+   "osrm_km": 14.66,
+   "valhalla_km": 14.66,
+   "diff_km": -0.0,
+   "diff_pct": -0.0
+  },
+  {
+   "from": "C5",
+   "to": "C2",
+   "osrm_km": 4.05,
+   "valhalla_km": 4.05,
+   "diff_km": -0.0,
+   "diff_pct": -0.0
+  },
+  {
+   "from": "C5",
+   "to": "C3",
+   "osrm_km": 5.28,
+   "valhalla_km": 5.28,
+   "diff_km": 0.0,
+   "diff_pct": 0.0
+  },
+  {
+   "from": "C5",
+   "to": "C4",
+   "osrm_km": 0.88,
+   "valhalla_km": 0.88,
+   "diff_km": -0.0,
+   "diff_pct": -0.5
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+  "company": {
+    "name": "SiciliaFresh Distribuzione",
+    "description": "Impresa fittizia che distribuisce prodotti agroalimentari freschi (ortofrutta, latticini, prodotti da forno) a piccoli esercizi commerciali, ristoranti e rivenditori lungo la costa tirrenica della provincia di Messina, tra Milazzo e Spadafora, con deposito a San Pier Marina, frazione costiera di San Pier Niceto.",
+    "note": "Azienda, clienti e quantità sono interamente simulati a fini didattici: nessun dato appartiene a imprese reali. Le località e le distanze stradali sono invece reali.",
+    "area": "Costa tirrenica, provincia di Messina"
+  },
+  "distance_data": {
+    "status": "VERIFIED",
+    "unit": "km",
+    "source": "Distanze stradali calcolate da un servizio di routing (non misurate sul campo): OSRM (Open Source Routing Machine, server pubblico router.project-osrm.org) sulla rete stradale di OpenStreetMap, profilo auto, percorso più rapido; matrice direzionale (A→B può differire da B→A). Punti di riferimento: municipio per Milazzo, Torregrotta e Spadafora; nodo della frazione per San Pier Marina e Monforte Marina; ufficio postale di Via Paolo Sindoni per Venetico Marina. Tutte le 30 coppie usano la SS113 costiera e strade provinciali di pianura (SP58, SP59, SP60, SP67), senza tratti montani né autostradali. Interrogazione del servizio del 15/10/2026; risposta completa e strade percorse in data/distances_source.json, rigenerabile con tools/fetch_distances.py. Controllo indipendente del motore di calcolo con Valhalla (FOSSGIS, stessi dati OpenStreetMap) in data/distances_check.json.",
+    "retrieved_on": "2026-10-15"
+  },
+  "vehicles": {
+    "scenario_A": {
+      "count": 1,
+      "capacity_kg": 1600,
+      "label": "Furgone medio refrigerato (1 unità)"
+    },
+    "scenario_B": {
+      "count": 2,
+      "capacity_kg": 900,
+      "label": "Furgone leggero refrigerato (2 unità identiche)"
+    }
+  }
+}

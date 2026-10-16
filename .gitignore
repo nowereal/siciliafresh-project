@@ -1,0 +1,22 @@
+# Cache e ambienti Python
+__pycache__/
+*.pyc
+.venv/
+
+# Archivi e copie di lavoro
+*.zip
+*.tmp
+~$*
+
+# Documenti universitari con dati personali (es. matricola): non pubblicare
+elaborato/
+
+# Configurazioni locali di editor e strumenti
+.claude/
+.vscode/
+.idea/
+
+# File di sistema
+Thumbs.db
+desktop.ini
+.DS_Store
