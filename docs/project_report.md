@@ -7,7 +7,7 @@ Tema n. 1: La digitalizzazione dell'impresa
 Studente: **Giovanni Costa** – Università Telematica Pegaso – Anno accademico **2026/2027**
 (la matricola è riportata nell'elaborato ufficiale e non è pubblicata nel repository)
 
-Repository GitHub: **[link da inserire dopo la pubblicazione]** – Pagina dei risultati (GitHub Pages): **[link da inserire]**
+Repository GitHub: <https://github.com/nowereal/siciliafresh-project> – Pagina dei risultati (GitHub Pages): <https://nowereal.github.io/siciliafresh-project/>
 
 > Documento tecnico (versione 5) da rileggere, verificare e personalizzare prima dell'adattamento al template
 > ufficiale. Tutti i valori numerici sono prodotti da `python main.py` con i dati della cartella `data/`
@@ -200,7 +200,7 @@ sviluppo: i valori della colonna «Durata prevista» sono stime di pianificazion
 | Esecuzione di test e programma sul computer dello studente | **Da svolgere** (studente) |
 | Fonti per i parametri economici non osservati, durate effettive, completamento della ricerca sul contesto | **Da svolgere** (studente) |
 | Adattamento al template Pegaso | **Da svolgere** (studente) |
-| Fase 10: pubblicazione su GitHub e GitHub Pages, inserimento dei link | **Da svolgere** (previa autorizzazione) |
+| Fase 10: pubblicazione su GitHub e GitHub Pages, inserimento dei link | Completata il 17/10/2026, link verificati |
 
 ## 6. Risorse e strumenti
 
@@ -421,7 +421,7 @@ per gli script facoltativi di calcolo e controllo delle distanze.
 **Visualizzazione della pagina HTML.**
 - *In locale:* aprire con un doppio clic il file `output/index.html`. La pagina è statica: non richiede un
   server e funziona anche con JavaScript disattivato, mostrando in quel caso entrambi gli scenari.
-- *Online:* **[link GitHub Pages da inserire dopo la pubblicazione]**. Il file `index.html` nella radice del
+- *Online:* <https://nowereal.github.io/siciliafresh-project/>. Il file `index.html` nella radice del
   repository reindirizza a `output/index.html`.
 
 **Aggiornamento dei risultati.** Dopo ogni modifica dei file in `data/` (località, distanze, quantità,
@@ -802,7 +802,7 @@ testi.]**
 - [ ] Motivare con fonti gli altri parametri di costo (§12.2); in mancanza, lasciarli dichiarati come ipotesi.
 - [x] Controllare le voci bibliografiche segnate «da verificare» (verificate il 16/10/2026).
 - [ ] Adattare il rapporto al template ufficiale Pegaso.
-- [ ] Pubblicare il repository su GitHub, attivare GitHub Pages e inserire i link nel frontespizio e nel §10.1.
+- [x] Pubblicare il repository su GitHub, attivare GitHub Pages e inserire i link nel frontespizio e nel §10.1 (17/10/2026).
 
 ## Bibliografia e sitografia
 
@@ -874,8 +874,8 @@ testi.]**
 | Variazione di almeno un prezzo unitario | `sensitivity()` | Soddisfatto | Tre parametri; un pareggio nell'intervallo |
 | Pagina HTML con grafi e grafici | `output/` | Soddisfatto | Generata da `main.py` |
 | Rapporto finale | `docs/project_report.md` | Bozza | Da personalizzare e adattare al template |
-| Link al repository | Frontespizio | **Da completare** | Repository pronto in locale; pubblicazione da autorizzare |
-| Link alla pagina HTML o indicazioni per visualizzarla | §10.1, `README.md`, `index.html`, `.nojekyll` | Soddisfatto (indicazioni) | Istruzioni di esecuzione e visualizzazione nel §10.1; link online da inserire dopo la pubblicazione |
+| Link al repository | Frontespizio | Soddisfatto | <https://github.com/nowereal/siciliafresh-project> (pubblico) |
+| Link alla pagina HTML o indicazioni per visualizzarla | §10.1, `README.md`, `index.html`, `.nojekyll` | Soddisfatto | <https://nowereal.github.io/siciliafresh-project/>; istruzioni di esecuzione e visualizzazione nel §10.1 |
 
 ## Appendice B – Corrispondenza con i criteri di valutazione
 

@@ -173,23 +173,14 @@ ricalcolati da zero. La pagina non contiene valori inseriti a mano.
 - Le distanze OSRM dipendono dalla versione dei dati OpenStreetMap al momento del calcolo e possono
   differire di poco da altri servizi cartografici.
 
-## Pubblicazione su GitHub Pages (non ancora eseguita)
+## Pubblicazione
 
-Il repository **non è stato pubblicato**. Procedura suggerita:
+- Repository: <https://github.com/nowereal/siciliafresh-project>
+- Dashboard (GitHub Pages): <https://nowereal.github.io/siciliafresh-project/>
 
-```bash
-git init
-git add .
-git commit -m "Project Work PW 23 - SiciliaFresh"
-git branch -M main
-git remote add origin https://github.com/<utente>/siciliafresh-project.git
-git push -u origin main
-```
-
-Su GitHub: *Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`*.
-La pagina sarà raggiungibile a `https://<utente>.github.io/siciliafresh-project/` (il file `index.html` nella
-radice reindirizza a `output/index.html`). Tutti i collegamenti della pagina sono relativi (`styles.css`,
+La pagina è pubblicata da GitHub Pages dal branch `main`, cartella `(root)`
+(*Settings → Pages → Build and deployment → Deploy from a branch*): il file `index.html` nella
+radice reindirizza a `output/index.html`. Tutti i collegamenti della pagina sono relativi (`styles.css`,
 `app.js`, `results.json`), quindi funziona anche in una sottocartella. Dopo ogni modifica dei dati rieseguire
-`python main.py` e includere `output/` nel commit. Inserire infine i link del repository e della pagina nel
-frontespizio di `docs/project_report.md`.
+`python main.py` e includere `output/` nel commit: GitHub Pages aggiorna il sito a ogni push sul branch `main`.
 
