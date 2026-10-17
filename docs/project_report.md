@@ -278,7 +278,7 @@ distano meno di 0,5 km dall'ottimo; la distanza ottima e il confronto economico 
 | **C4** | 4,75 | 13,85 | 3,24 | 4,47 | 0 | 0,80 |
 | **C5** | 5,56 | 14,66 | 4,05 | 5,28 | 0,88 | 0 |
 
-La matrice è **direzionale**: in 14 coppie su 15 andata e ritorno differiscono (fino a 0,44 km), per effetto di
+La matrice è **direzionale**: in tutte le 15 coppie andata e ritorno differiscono (da 0,01 a 0,44 km), per effetto di
 sensi unici, svincoli e attraversamenti urbani. La matrice non è stata resa simmetrica.
 
 ### 7.3 Quantità e capacità
