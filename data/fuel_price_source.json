@@ -1,0 +1,29 @@
+{
+  "description": "Prezzo del gasolio usato nel modello economico: valore osservato, fonte ufficiale.",
+  "source": "Ministero delle Imprese e del Made in Italy (MIMIT), Osservatorio prezzi carburanti",
+  "date": "2026-10-26",
+  "retrieved_at": "2026-10-26T22:52",
+  "used_value": {
+    "fuel": "Gasolio",
+    "service": "self-service",
+    "area": "Sicilia (media regionale)",
+    "price_eur_per_l": 2.275,
+    "url": "https://www.mimit.gov.it/it/prezzo-medio-carburanti/regioni",
+    "page_update": "Aggiornamento 26-10-2026"
+  },
+  "reference_value": {
+    "fuel": "Gasolio",
+    "service": "self-service",
+    "area": "Italia (media nazionale, rete stradale)",
+    "price_eur_per_l": 2.261,
+    "url": "https://www.mimit.gov.it/it/prezzi-carburanti-media-nazionale",
+    "page_update": "26-10-2026"
+  },
+  "sicily_table_26_10_2026": {
+    "Gasolio self": 2.275,
+    "Benzina self": 2.029,
+    "GPL servito": 0.815,
+    "Metano servito": 2.116
+  },
+  "note": "Si usa il valore regionale perché più vicino all'area di consegna. Il prezzo include le imposte, come pubblicato dal MIMIT; per un'impresa che recupera l'IVA il costo effettivo sarebbe inferiore (aspetto discusso nel rapporto, non modellato)."
+}

@@ -1,0 +1,3 @@
+# Nessuna dipendenza esterna.
+# Il progetto usa solo la libreria standard di Python (>= 3.8):
+# csv, json, itertools, dataclasses, pathlib, unittest, webbrowser.

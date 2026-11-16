@@ -1,0 +1,855 @@
+{
+  "generated_at": "26/10/2026 23:10",
+  "distance_data_status": "VERIFIED",
+  "instance_checks": [
+    {
+      "check": "Il veicolo dello Scenario A trasporta tutte le consegne",
+      "passed": true,
+      "detail": "domanda totale 1500 kg ≤ capacità 1600 kg"
+    },
+    {
+      "check": "Nessun veicolo dello Scenario B trasporta da solo tutte le consegne",
+      "passed": true,
+      "detail": "domanda totale 1500 kg > capacità 900 kg"
+    },
+    {
+      "check": "Esiste almeno una ripartizione ammissibile tra i due veicoli",
+      "passed": true,
+      "detail": "verificato enumerando tutte le ripartizioni"
+    },
+    {
+      "check": "Ogni singola consegna è trasportabile da un veicolo dello Scenario B",
+      "passed": true,
+      "detail": "consegna massima 420 kg ≤ 900 kg"
+    }
+  ],
+  "scenario_A": {
+    "route": [
+      "D",
+      "C3",
+      "C4",
+      "C5",
+      "C2",
+      "C1",
+      "D"
+    ],
+    "distance_km": 34.37,
+    "evaluated": 120,
+    "optimal_ties": 2,
+    "min_check": 34.37,
+    "load_kg": 1500.0,
+    "capacity_kg": 1600.0,
+    "schedule": {
+      "initial_load_kg": 1500.0,
+      "capacity_kg": 1600.0,
+      "steps": [
+        {
+          "stop": "D",
+          "kind": "partenza",
+          "delivered_kg": 0,
+          "residual_kg": 1500.0,
+          "leg_km": 0.0,
+          "cumulative_km": 0.0
+        },
+        {
+          "stop": "C3",
+          "kind": "consegna",
+          "delivered_kg": 350.0,
+          "residual_kg": 1150.0,
+          "leg_km": 4.49,
+          "cumulative_km": 4.49
+        },
+        {
+          "stop": "C4",
+          "kind": "consegna",
+          "delivered_kg": 250.0,
+          "residual_kg": 900.0,
+          "leg_km": 4.46,
+          "cumulative_km": 8.95
+        },
+        {
+          "stop": "C5",
+          "kind": "consegna",
+          "delivered_kg": 300.0,
+          "residual_kg": 600.0,
+          "leg_km": 0.8,
+          "cumulative_km": 9.75
+        },
+        {
+          "stop": "C2",
+          "kind": "consegna",
+          "delivered_kg": 180.0,
+          "residual_kg": 420.0,
+          "leg_km": 3.83,
+          "cumulative_km": 13.58
+        },
+        {
+          "stop": "C1",
+          "kind": "consegna",
+          "delivered_kg": 420.0,
+          "residual_kg": 0.0,
+          "leg_km": 10.84,
+          "cumulative_km": 24.42
+        },
+        {
+          "stop": "D",
+          "kind": "rientro",
+          "delivered_kg": 0,
+          "residual_kg": 0.0,
+          "leg_km": 9.95,
+          "cumulative_km": 34.370000000000005
+        }
+      ]
+    }
+  },
+  "scenario_B": {
+    "routes": [
+      [
+        "D",
+        "C2",
+        "C1",
+        "D"
+      ],
+      [
+        "D",
+        "C3",
+        "C4",
+        "C5",
+        "D"
+      ]
+    ],
+    "distances_km": [
+      22.27,
+      15.31
+    ],
+    "distance_km": 37.58,
+    "loads_kg": [
+      600.0,
+      900.0
+    ],
+    "capacity_kg": 900.0,
+    "partitions_examined": 15,
+    "feasible_partitions": 6,
+    "evaluated": 72,
+    "optimal_ties": 2,
+    "min_check": 37.58,
+    "partitions": [
+      {
+        "group1": [
+          "C1"
+        ],
+        "group2": [
+          "C2",
+          "C3",
+          "C4",
+          "C5"
+        ],
+        "load1": 420.0,
+        "load2": 1080.0,
+        "feasible": false,
+        "best_km": null
+      },
+      {
+        "group1": [
+          "C1",
+          "C2"
+        ],
+        "group2": [
+          "C3",
+          "C4",
+          "C5"
+        ],
+        "load1": 600.0,
+        "load2": 900.0,
+        "feasible": true,
+        "best_km": 37.58
+      },
+      {
+        "group1": [
+          "C1",
+          "C3"
+        ],
+        "group2": [
+          "C2",
+          "C4",
+          "C5"
+        ],
+        "load1": 770.0,
+        "load2": 730.0,
+        "feasible": true,
+        "best_km": 39.26
+      },
+      {
+        "group1": [
+          "C1",
+          "C2",
+          "C3"
+        ],
+        "group2": [
+          "C4",
+          "C5"
+        ],
+        "load1": 950.0,
+        "load2": 550.0,
+        "feasible": false,
+        "best_km": null
+      },
+      {
+        "group1": [
+          "C1",
+          "C4"
+        ],
+        "group2": [
+          "C2",
+          "C3",
+          "C5"
+        ],
+        "load1": 670.0,
+        "load2": 830.0,
+        "feasible": true,
+        "best_km": 43.54
+      },
+      {
+        "group1": [
+          "C1",
+          "C2",
+          "C4"
+        ],
+        "group2": [
+          "C3",
+          "C5"
+        ],
+        "load1": 850.0,
+        "load2": 650.0,
+        "feasible": true,
+        "best_km": 43.54
+      },
+      {
+        "group1": [
+          "C1",
+          "C3",
+          "C4"
+        ],
+        "group2": [
+          "C2",
+          "C5"
+        ],
+        "load1": 1020.0,
+        "load2": 480.0,
+        "feasible": false,
+        "best_km": null
+      },
+      {
+        "group1": [
+          "C1",
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "group2": [
+          "C5"
+        ],
+        "load1": 1200.0,
+        "load2": 300.0,
+        "feasible": false,
+        "best_km": null
+      },
+      {
+        "group1": [
+          "C1",
+          "C5"
+        ],
+        "group2": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "load1": 720.0,
+        "load2": 780.0,
+        "feasible": true,
+        "best_km": 43.55
+      },
+      {
+        "group1": [
+          "C1",
+          "C2",
+          "C5"
+        ],
+        "group2": [
+          "C3",
+          "C4"
+        ],
+        "load1": 900.0,
+        "load2": 600.0,
+        "feasible": true,
+        "best_km": 43.55
+      },
+      {
+        "group1": [
+          "C1",
+          "C3",
+          "C5"
+        ],
+        "group2": [
+          "C2",
+          "C4"
+        ],
+        "load1": 1070.0,
+        "load2": 430.0,
+        "feasible": false,
+        "best_km": null
+      },
+      {
+        "group1": [
+          "C1",
+          "C2",
+          "C3",
+          "C5"
+        ],
+        "group2": [
+          "C4"
+        ],
+        "load1": 1250.0,
+        "load2": 250.0,
+        "feasible": false,
+        "best_km": null
+      },
+      {
+        "group1": [
+          "C1",
+          "C4",
+          "C5"
+        ],
+        "group2": [
+          "C2",
+          "C3"
+        ],
+        "load1": 970.0,
+        "load2": 530.0,
+        "feasible": false,
+        "best_km": null
+      },
+      {
+        "group1": [
+          "C1",
+          "C2",
+          "C4",
+          "C5"
+        ],
+        "group2": [
+          "C3"
+        ],
+        "load1": 1150.0,
+        "load2": 350.0,
+        "feasible": false,
+        "best_km": null
+      },
+      {
+        "group1": [
+          "C1",
+          "C3",
+          "C4",
+          "C5"
+        ],
+        "group2": [
+          "C2"
+        ],
+        "load1": 1320.0,
+        "load2": 180.0,
+        "feasible": false,
+        "best_km": null
+      }
+    ],
+    "schedules": [
+      {
+        "initial_load_kg": 600.0,
+        "capacity_kg": 900.0,
+        "steps": [
+          {
+            "stop": "D",
+            "kind": "partenza",
+            "delivered_kg": 0,
+            "residual_kg": 600.0,
+            "leg_km": 0.0,
+            "cumulative_km": 0.0
+          },
+          {
+            "stop": "C2",
+            "kind": "consegna",
+            "delivered_kg": 180.0,
+            "residual_kg": 420.0,
+            "leg_km": 1.48,
+            "cumulative_km": 1.48
+          },
+          {
+            "stop": "C1",
+            "kind": "consegna",
+            "delivered_kg": 420.0,
+            "residual_kg": 0.0,
+            "leg_km": 10.84,
+            "cumulative_km": 12.32
+          },
+          {
+            "stop": "D",
+            "kind": "rientro",
+            "delivered_kg": 0,
+            "residual_kg": 0.0,
+            "leg_km": 9.95,
+            "cumulative_km": 22.27
+          }
+        ]
+      },
+      {
+        "initial_load_kg": 900.0,
+        "capacity_kg": 900.0,
+        "steps": [
+          {
+            "stop": "D",
+            "kind": "partenza",
+            "delivered_kg": 0,
+            "residual_kg": 900.0,
+            "leg_km": 0.0,
+            "cumulative_km": 0.0
+          },
+          {
+            "stop": "C3",
+            "kind": "consegna",
+            "delivered_kg": 350.0,
+            "residual_kg": 550.0,
+            "leg_km": 4.49,
+            "cumulative_km": 4.49
+          },
+          {
+            "stop": "C4",
+            "kind": "consegna",
+            "delivered_kg": 250.0,
+            "residual_kg": 300.0,
+            "leg_km": 4.46,
+            "cumulative_km": 8.95
+          },
+          {
+            "stop": "C5",
+            "kind": "consegna",
+            "delivered_kg": 300.0,
+            "residual_kg": 0.0,
+            "leg_km": 0.8,
+            "cumulative_km": 9.75
+          },
+          {
+            "stop": "D",
+            "kind": "rientro",
+            "delivered_kg": 0,
+            "residual_kg": 0.0,
+            "leg_km": 5.56,
+            "cumulative_km": 15.309999999999999
+          }
+        ]
+      }
+    ]
+  },
+  "distance_comparison": {
+    "distance_a_km": 34.37,
+    "distance_b_km": 37.58,
+    "diff_km": 3.210000000000001,
+    "pct_diff_vs_a": 9.339540296770442
+  },
+  "costs": {
+    "A": {
+      "vehicles": [
+        {
+          "fixed": 75.0,
+          "fuel": 8.6010925,
+          "other_km": 4.1244,
+          "driver": 42.184999999999995,
+          "total": 129.9104925,
+          "hours": 2.10925,
+          "distance_km": 34.37
+        }
+      ],
+      "totals": {
+        "fixed": 75.0,
+        "fuel": 8.6010925,
+        "other_km": 4.1244,
+        "driver": 42.184999999999995,
+        "total": 129.9104925,
+        "hours": 2.10925,
+        "distance_km": 34.37
+      }
+    },
+    "B": {
+      "vehicles": [
+        {
+          "fixed": 50.0,
+          "fuel": 4.05314,
+          "other_km": 1.7816,
+          "driver": 21.135,
+          "total": 76.96974,
+          "hours": 1.05675,
+          "distance_km": 22.27
+        },
+        {
+          "fixed": 50.0,
+          "fuel": 2.78642,
+          "other_km": 1.2248,
+          "driver": 22.655,
+          "total": 76.66622,
+          "hours": 1.1327500000000001,
+          "distance_km": 15.31
+        }
+      ],
+      "totals": {
+        "fixed": 100.0,
+        "fuel": 6.8395600000000005,
+        "other_km": 3.0064,
+        "driver": 43.790000000000006,
+        "total": 153.63596,
+        "hours": 2.1895000000000002,
+        "distance_km": 37.58
+      }
+    },
+    "comparison": {
+      "cost_a": 129.9104925,
+      "cost_b": 153.63596,
+      "abs_diff": 23.725467500000008,
+      "diff_b_minus_a": 23.725467500000008,
+      "pct_diff_vs_a": 18.262933996651583,
+      "cheaper": "A"
+    }
+  },
+  "sensitivity": [
+    {
+      "parameter": "fuel_price_eur_per_l",
+      "label": "Prezzo del carburante (EUR/l)",
+      "base_value": 2.275,
+      "rows": [
+        {
+          "value": 1.6,
+          "cost_a": 127.35852,
+          "cost_b": 151.60664,
+          "diff_b_minus_a": 24.24812,
+          "cheaper": "A"
+        },
+        {
+          "value": 1.7,
+          "cost_a": 127.73658999999999,
+          "cost_b": 151.90728000000001,
+          "diff_b_minus_a": 24.17069000000002,
+          "cheaper": "A"
+        },
+        {
+          "value": 1.8,
+          "cost_a": 128.11466,
+          "cost_b": 152.20792,
+          "diff_b_minus_a": 24.093260000000015,
+          "cheaper": "A"
+        },
+        {
+          "value": 1.9,
+          "cost_a": 128.49273,
+          "cost_b": 152.50856,
+          "diff_b_minus_a": 24.015829999999994,
+          "cheaper": "A"
+        },
+        {
+          "value": 2.0,
+          "cost_a": 128.8708,
+          "cost_b": 152.8092,
+          "diff_b_minus_a": 23.9384,
+          "cheaper": "A"
+        },
+        {
+          "value": 2.1,
+          "cost_a": 129.24886999999998,
+          "cost_b": 153.10984000000002,
+          "diff_b_minus_a": 23.860970000000037,
+          "cheaper": "A"
+        },
+        {
+          "value": 2.2,
+          "cost_a": 129.62694,
+          "cost_b": 153.41048,
+          "diff_b_minus_a": 23.783540000000016,
+          "cheaper": "A"
+        },
+        {
+          "value": 2.3,
+          "cost_a": 130.00501,
+          "cost_b": 153.71112,
+          "diff_b_minus_a": 23.706109999999995,
+          "cheaper": "A"
+        },
+        {
+          "value": 2.4,
+          "cost_a": 130.38308,
+          "cost_b": 154.01176,
+          "diff_b_minus_a": 23.628680000000003,
+          "cheaper": "A"
+        },
+        {
+          "value": 2.5,
+          "cost_a": 130.76115,
+          "cost_b": 154.3124,
+          "diff_b_minus_a": 23.55125000000001,
+          "cheaper": "A"
+        },
+        {
+          "value": 2.6,
+          "cost_a": 131.13922,
+          "cost_b": 154.61304,
+          "diff_b_minus_a": 23.473820000000018,
+          "cheaper": "A"
+        },
+        {
+          "value": 2.7,
+          "cost_a": 131.51729,
+          "cost_b": 154.91368,
+          "diff_b_minus_a": 23.396389999999997,
+          "cheaper": "A"
+        },
+        {
+          "value": 2.8,
+          "cost_a": 131.89535999999998,
+          "cost_b": 155.21432,
+          "diff_b_minus_a": 23.318960000000004,
+          "cheaper": "A"
+        },
+        {
+          "value": 2.9,
+          "cost_a": 132.27343,
+          "cost_b": 155.51496,
+          "diff_b_minus_a": 23.24153000000001,
+          "cheaper": "A"
+        }
+      ],
+      "breakeven": 32.916182358258624,
+      "breakeven_in_range": false,
+      "breakeven_meaningful": true
+    },
+    {
+      "parameter": "driver_cost_eur_per_h",
+      "label": "Costo orario dell'autista (EUR/h)",
+      "base_value": 20.0,
+      "rows": [
+        {
+          "value": 12.0,
+          "cost_a": 113.0364925,
+          "cost_b": 136.11996,
+          "diff_b_minus_a": 23.083467499999998,
+          "cheaper": "A"
+        },
+        {
+          "value": 14.0,
+          "cost_a": 117.2549925,
+          "cost_b": 140.49896,
+          "diff_b_minus_a": 23.24396750000001,
+          "cheaper": "A"
+        },
+        {
+          "value": 16.0,
+          "cost_a": 121.47349249999999,
+          "cost_b": 144.87796,
+          "diff_b_minus_a": 23.40446750000001,
+          "cheaper": "A"
+        },
+        {
+          "value": 18.0,
+          "cost_a": 125.6919925,
+          "cost_b": 149.25696,
+          "diff_b_minus_a": 23.564967499999995,
+          "cheaper": "A"
+        },
+        {
+          "value": 20.0,
+          "cost_a": 129.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": 23.725467500000008,
+          "cheaper": "A"
+        },
+        {
+          "value": 22.0,
+          "cost_a": 134.12899249999998,
+          "cost_b": 158.01496,
+          "diff_b_minus_a": 23.88596750000002,
+          "cheaper": "A"
+        },
+        {
+          "value": 24.0,
+          "cost_a": 138.3474925,
+          "cost_b": 162.39396,
+          "diff_b_minus_a": 24.046467500000006,
+          "cheaper": "A"
+        },
+        {
+          "value": 26.0,
+          "cost_a": 142.5659925,
+          "cost_b": 166.77296,
+          "diff_b_minus_a": 24.20696750000002,
+          "cheaper": "A"
+        },
+        {
+          "value": 28.0,
+          "cost_a": 146.7844925,
+          "cost_b": 171.15196000000003,
+          "diff_b_minus_a": 24.367467500000032,
+          "cheaper": "A"
+        },
+        {
+          "value": 30.0,
+          "cost_a": 151.0029925,
+          "cost_b": 175.53096,
+          "diff_b_minus_a": 24.52796749999999,
+          "cheaper": "A"
+        },
+        {
+          "value": 32.0,
+          "cost_a": 155.22149249999998,
+          "cost_b": 179.90996,
+          "diff_b_minus_a": 24.68846750000003,
+          "cheaper": "A"
+        }
+      ],
+      "breakeven": -275.64445482863766,
+      "breakeven_in_range": false,
+      "breakeven_meaningful": false
+    },
+    {
+      "parameter": "vehicle_types.scenario_A.fixed_cost_eur_per_day",
+      "label": "Costo fisso giornaliero del veicolo A (EUR/giorno)",
+      "base_value": 75.0,
+      "rows": [
+        {
+          "value": 50.0,
+          "cost_a": 104.91049249999999,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": 48.72546750000002,
+          "cheaper": "A"
+        },
+        {
+          "value": 55.0,
+          "cost_a": 109.91049249999999,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": 43.72546750000002,
+          "cheaper": "A"
+        },
+        {
+          "value": 60.0,
+          "cost_a": 114.91049249999999,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": 38.72546750000002,
+          "cheaper": "A"
+        },
+        {
+          "value": 65.0,
+          "cost_a": 119.91049249999999,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": 33.72546750000002,
+          "cheaper": "A"
+        },
+        {
+          "value": 70.0,
+          "cost_a": 124.91049249999999,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": 28.725467500000022,
+          "cheaper": "A"
+        },
+        {
+          "value": 75.0,
+          "cost_a": 129.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": 23.725467500000008,
+          "cheaper": "A"
+        },
+        {
+          "value": 80.0,
+          "cost_a": 134.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": 18.725467500000008,
+          "cheaper": "A"
+        },
+        {
+          "value": 85.0,
+          "cost_a": 139.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": 13.725467500000008,
+          "cheaper": "A"
+        },
+        {
+          "value": 90.0,
+          "cost_a": 144.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": 8.725467500000008,
+          "cheaper": "A"
+        },
+        {
+          "value": 95.0,
+          "cost_a": 149.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": 3.7254675000000077,
+          "cheaper": "A"
+        },
+        {
+          "value": 100.0,
+          "cost_a": 154.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": -1.2745324999999923,
+          "cheaper": "B"
+        },
+        {
+          "value": 105.0,
+          "cost_a": 159.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": -6.274532499999992,
+          "cheaper": "B"
+        },
+        {
+          "value": 110.0,
+          "cost_a": 164.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": -11.274532499999992,
+          "cheaper": "B"
+        },
+        {
+          "value": 115.0,
+          "cost_a": 169.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": -16.274532499999992,
+          "cheaper": "B"
+        },
+        {
+          "value": 120.0,
+          "cost_a": 174.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": -21.274532499999992,
+          "cheaper": "B"
+        },
+        {
+          "value": 125.0,
+          "cost_a": 179.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": -26.274532499999992,
+          "cheaper": "B"
+        },
+        {
+          "value": 130.0,
+          "cost_a": 184.9104925,
+          "cost_b": 153.63596,
+          "diff_b_minus_a": -31.274532499999992,
+          "cheaper": "B"
+        }
+      ],
+      "breakeven": 98.72546750000001,
+      "breakeven_in_range": true,
+      "breakeven_meaningful": true
+    }
+  ],
+  "distance_check": {
+    "service": "Valhalla, server pubblico FOSSGIS (valhalla1.openstreetmap.de)",
+    "retrieved_at": "2026-10-26T23:09:47",
+    "pairs": 30,
+    "missing": 0,
+    "mean_abs_diff_km": 0.076,
+    "max_abs_diff_km": 0.4,
+    "max_abs_diff_pct": 13.0,
+    "within_5_pct": 26
+  }
+}

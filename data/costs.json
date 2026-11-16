@@ -1,0 +1,59 @@
+{
+  "_note": "Il prezzo del carburante è un valore OSSERVATO (fonte in fuel_price_source.json). Tutti gli altri valori sono IPOTESI didattiche modificabili, non tariffe ufficiali.",
+  "parameter_types": {
+    "fuel_price_eur_per_l": "osservato: MIMIT, Osservatorio prezzi carburanti, gasolio self-service, media regionale Sicilia, 26/10/2026",
+    "driver_cost_eur_per_h": "ipotesi",
+    "average_speed_kmh": "ipotesi, coerente con i tempi stimati da OSRM",
+    "service_time_min_per_stop": "ipotesi",
+    "fixed_cost_eur_per_day": "ipotesi",
+    "fuel_consumption_l_per_km": "ipotesi",
+    "other_variable_cost_eur_per_km": "ipotesi"
+  },
+  "common": {
+    "fuel_price_eur_per_l": 2.275,
+    "driver_cost_eur_per_h": 20.0,
+    "average_speed_kmh": 40.0,
+    "service_time_min_per_stop": 15.0,
+    "_speed_rationale": "40 km/h: media ipotizzata per percorsi misti su strade statali/provinciali e attraversamenti urbani; e una stima, non un tempo misurato.",
+    "_fuel_cost_rule": "Costo del carburante per km = consumo (l/km) x prezzo (EUR/l). Gli altri costi variabili per km NON includono il carburante, quindi non c'e doppio conteggio."
+  },
+  "vehicle_types": {
+    "scenario_A": {
+      "fixed_cost_eur_per_day": 75.0,
+      "fuel_consumption_l_per_km": 0.11,
+      "other_variable_cost_eur_per_km": 0.12,
+      "_fixed_cost_meaning": "quota giornaliera di noleggio/ammortamento, assicurazione, bollo, manutenzione programmata",
+      "_other_cost_meaning": "pneumatici, manutenzione straordinaria, usura (carburante escluso)"
+    },
+    "scenario_B": {
+      "fixed_cost_eur_per_day": 50.0,
+      "fuel_consumption_l_per_km": 0.08,
+      "other_variable_cost_eur_per_km": 0.08,
+      "_fixed_cost_meaning": "come sopra, per un veicolo piu piccolo",
+      "_other_cost_meaning": "pneumatici, manutenzione straordinaria, usura (carburante escluso)"
+    }
+  },
+  "sensitivity": [
+    {
+      "parameter": "fuel_price_eur_per_l",
+      "label": "Prezzo del carburante (EUR/l)",
+      "min": 1.6,
+      "max": 2.9,
+      "step": 0.1
+    },
+    {
+      "parameter": "driver_cost_eur_per_h",
+      "label": "Costo orario dell'autista (EUR/h)",
+      "min": 12.0,
+      "max": 32.0,
+      "step": 2.0
+    },
+    {
+      "parameter": "vehicle_types.scenario_A.fixed_cost_eur_per_day",
+      "label": "Costo fisso giornaliero del veicolo A (EUR/giorno)",
+      "min": 50.0,
+      "max": 130.0,
+      "step": 5.0
+    }
+  ]
+}
